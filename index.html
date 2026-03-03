@@ -72,11 +72,7 @@
             <div class="text-xs font-medium text-indigo-600">0. Revisão</div>
             <div class="text-xs text-gray-500 mt-1">2min</div>
           </button>
-          <button data-phase="explicacao" class="phase-card bg-white hover:bg-gray-50 p-3 rounded-xl text-center transition border-2 border-gray-300 shadow-sm">
-            <div class="text-2xl mb-1">📋</div>
-            <div class="text-xs font-medium text-indigo-600">1. Explicação</div>
-            <div class="text-xs text-gray-500 mt-1">5min</div>
-          </button>
+         
           <button data-phase="persona" class="phase-card bg-white hover:bg-gray-50 p-3 rounded-xl text-center transition border-2 border-gray-300 shadow-sm">
             <div class="text-2xl mb-1">👤</div>
             <div class="text-xs font-medium text-indigo-600">2. Persona</div>
@@ -177,11 +173,8 @@
     // ========================================
     // CONFIGURAÇÃO DA API
     // ========================================
-    const WORKER_API_URL = "https://incluieduca.felipeandrade1.workers.dev/chat";
+    const WORKER_API_URL = "incluicanvaoficial.neurorehabusprp.workers.dev";
 
-    // ========================================
-    // DADOS DAS FASES CORRIGIDOS
-    // ========================================
     const phasesData = {
       revisao: {
         title: "👥 Revisão da Divisão dos Grupos",
@@ -191,15 +184,7 @@
           { id: "rev-grupos", label: "Composição dos grupos", placeholder: "Quem está em cada grupo?", type: "textarea" }
         ]
       },
-      explicacao: {
-        title: "📋 Explicação da Atividade e Uso da IA",
-        duration: 5,
-        description: "Apresentação da dinâmica da oficina e demonstração de como usar o assistente de IA.",
-        fields: [
-          { id: "exp-objetivos", label: "Objetivos da oficina", placeholder: "O que esperamos alcançar...", type: "textarea" },
-          { id: "exp-ia", label: "Como usar a IA", placeholder: "Demonstração prática...", type: "textarea" }
-        ]
-      },
+     
       persona: {
         title: "👤 Criação da Persona",
         duration: 7,
